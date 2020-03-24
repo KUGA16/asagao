@@ -46,4 +46,9 @@ class LessonController < ApplicationController
     @population = 704414
     @surface = 141.31
   end
+
+  def step12
+    @time = Time.current
+    @population = 127767944
+  end
 end
