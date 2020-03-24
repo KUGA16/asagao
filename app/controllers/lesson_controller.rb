@@ -24,4 +24,26 @@ class LessonController < ApplicationController
   def step6
     render plain: flash[:notice]
   end
+
+  def step7
+    @price = (2000 * 1.08).floor
+  end
+
+  def step8
+    @price = 1000
+    render 'step7'
+  end
+
+  def step9
+    @comment = "<script>alert('危険！')</script>こんにちは。"
+  end
+
+  def step10
+    @comment = "<strong>安全なHTML</strong>"
+  end
+
+  def step11
+    @population = 704414
+    @surface = 141.31
+  end
 end
