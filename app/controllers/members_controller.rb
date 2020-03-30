@@ -41,5 +41,8 @@ class MembersController < ApplicationController
   end
 
   def destroy
+    @member = Member.find(params[:id])
+    @member.destroy
+    redirect_to :members, notice: "会員を削除しました。"
   end
 end
