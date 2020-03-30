@@ -210,13 +210,6 @@
  aside#sidebar li {
    margin-bottom: 0.3em;
  }
- /* フラッシュ */
- p.notice {
-   border: 1px solid blue;
-   padding: 3px;
-   background-color: #ccf;
- }
-
  /* エラー表示 */
  div#errors {
    background-color: #fee;
